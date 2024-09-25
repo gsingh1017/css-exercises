@@ -2,10 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
-  color: hsl(0, 0%, 0%);
-  font-weight: 800;
+/* shifted .para above .small-para giving .small-para precident over .para */
+.para {
+  font-size: 22px;
 }
 
 .small-para {
@@ -13,30 +12,35 @@ body {
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
 } 
 
+/* shifted .button class above .confirm class because .confirm will take precident over .button as it's the last rule */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
+.confirm {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* replaced div.text with .text */ 
+.text  {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* shifted .child below .text to give .child rule precident over .text rule because it's the last rule defined */
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
