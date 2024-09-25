@@ -7,3 +7,5 @@
     font-size: 20px;
     font-display: center;
 }
+
+/* Originally added comma between .container and .text. Fixed the problem once comma was removed. */
