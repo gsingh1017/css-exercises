@@ -3,25 +3,59 @@ body {
   font-family: sans-serif;
 }
 
+/* 
+// added 8px padding for white background 
+*/
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
+/* 
+// added 16px font size 
+// originally added 8px top margin; this was incorrect as it should've been bottom margin
+// added 8px padding
+*/
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 8px;
 }
 
+/* 
+// added 16px top & bottom
+// added 8px right & left padding
+// added 8px bottom margin
+*/
 .content {
   background: #e3f4ff;
+  padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
+/* 
+// added 8px padding
+// added margin 0 auto 
+// added center text align
+*/
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
 }
 
+/* 
+// added block display to shift button below "and a"
+// added margin 0, auto to self-allign 
+// added padding 8px 24px; puts 8px space between top & bottom, and 24px space between right and left
+*/
 button {
+  display: block;
   background: white;
   border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 8px 24px;
 }
