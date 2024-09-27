@@ -7,15 +7,22 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  /* 
+  // Changed padding to 32px and margin to 12px 
+  // Margin 12px adds 12px margin to top, right, bottom, and left.
+  */
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  /* 
+  // changed margin-bottom to 48px
+  */
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +30,10 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  /*
+  // changed padding to 32px
+  // changed margin-left to 330px, but solution.css had it set to auto
+  */
+  padding: 32px;
+  margin-left: auto;
 }
