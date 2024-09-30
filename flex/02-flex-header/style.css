@@ -1,6 +1,12 @@
-.header  {
+.header  { /* flex container */
   font-family: monospace;
   background: papayawhip;
+  /* added below code */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* heading code was correct */
 }
 
 .logo {
@@ -9,11 +15,34 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /* added below code */
+
+  /* 
+  flex: 1 1 auto; 
+  align-self: center;
+  max-width: fit-content;
+
+  // the above code wasn't needed at all because the header will center this item 
+  */
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* added below code */
+  display: flex;
+
+  /* 
+  justify-content: space-between;
+  align-items: center;
+  
+  // I though this code would space between items, but <ul> has default margin & padding, so setting to 0 value will fix problem
+  */
+
+  /* below code from solution */
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 a {
@@ -21,5 +50,5 @@ a {
   background: white;
   padding: 8px;
   /* this removes the line under the links */
-  text-decoration: none;
+  text-decoration: none; 
 }
