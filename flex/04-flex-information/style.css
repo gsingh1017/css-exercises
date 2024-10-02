@@ -10,6 +10,9 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* added below 2 code lines */ 
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +27,40 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* added below code */
+
+.plants  /* plants container */ {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.barberry,
+.chili,
+.pepper,
+.saffron /* plants */ {
+  flex-wrap: wrap;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* SOLUTION 
+
+body {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
+} */
