@@ -24,3 +24,58 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* added below code */
+
+/* body is flex container */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* padding for grey buttons */
+button {
+  padding: 8px;
+}
+
+/* removes list bullet and unwanted padding + margin */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* removes blue text colour and underline */
+a {
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+}
+
+/* container for links */
+.header, 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* footer background colour */
+.footer {
+  background: #eee;
+}
+
+.left-links,
+.right-links /* can consolidate to ul as per solution */ {
+  display: flex;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-grow: 1; /* content grows to fill screen while header and footer doesn't */
+}
+
